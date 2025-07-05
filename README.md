@@ -24,6 +24,13 @@ Bu proje, sevgili çiftlerin tanıştıkları günden itibaren geçen zamanı he
 
 ## 🚀 Kullanım
 
+### Seçenek 1: Launch Script ile (Önerilen)
+1. Terminal veya komut istemcisini açın
+2. `./launch.sh` komutunu çalıştırın
+3. Tarayıcınızda `http://localhost:8000` adresine gidin
+4. Romantik deneyimin keyfini çıkarın!
+
+### Seçenek 2: Doğrudan Tarayıcıda
 1. `index.html` dosyasını web tarayıcınızda açın
 2. Talimatları takip edin
 3. Romantik deneyimin keyfini çıkarın!
@@ -34,6 +41,7 @@ Bu proje, sevgili çiftlerin tanıştıkları günden itibaren geçen zamanı he
 ├── index.html      # Ana HTML dosyası
 ├── style.css       # CSS stilleri ve animasyonlar
 ├── script.js       # JavaScript fonksiyonları
+├── launch.sh       # Site başlatma scripti
 └── README.md       # Proje açıklaması
 ```
 
