@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sevgililer Zamanı ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💕 Sevgililer Zamanı 💕</h1>
+            <p>Tanıştığımız günden bu yana geçen her anı birlikte yaşıyoruz...</p>
+        </header>
+
+        <div id="welcome-screen" class="screen active">
+            <div class="heart-animation">💖</div>
+            <h2>Hoş geldin aşkım!</h2>
+            <p>Önce birkaç soru sormak istiyorum...</p>
+            <button onclick="startQuestions()">Başla</button>
+        </div>
+
+        <div id="question-screen" class="screen">
+            <div class="question-container">
+                <h2 id="question-title"></h2>
+                <p id="question-text"></p>
+                <div class="buttons">
+                    <button id="yes-btn" onclick="handleYes()">Evet</button>
+                    <button id="no-btn" onclick="handleNo()">Hayır</button>
+                </div>
+                <div id="rejection-message" class="rejection-message"></div>
+            </div>
+        </div>
+
+        <div id="date-input-screen" class="screen">
+            <h2>Tanışma Tarihimiz</h2>
+            <p>Hangi tarihte tanıştık aşkım?</p>
+            <div class="date-input-container">
+                <input type="date" id="meeting-date" />
+                <button onclick="calculateTime()">Hesapla</button>
+            </div>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <h2>Birlikte Geçirdiğimiz Zaman 💞</h2>
+            <div class="time-display" id="time-display"></div>
+            <div class="love-message">
+                <p>Ve her geçen gün daha çok seviyorum seni... 💕</p>
+                <p>Barıştığımız için çok mutluyum aşkım!</p>
+            </div>
+            <button onclick="restart()">Yeniden Başla</button>
+        </div>
+
+        <div class="floating-hearts">
+            <div class="heart">💖</div>
+            <div class="heart">💕</div>
+            <div class="heart">💗</div>
+            <div class="heart">💓</div>
+            <div class="heart">💝</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
